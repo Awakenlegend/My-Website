@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Theme-dependent styles for the body */
+.light-mode body {
+  color: #212121; /* Light mode default text color */
+}
+
+.dark-mode body {
+  color: #ccd6f6; /* Dark mode default text color */
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+section {
+  padding: 80px 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
+@media (max-width: 768px) {
+  section {
+    padding: 60px 0;
+  }
+} 
